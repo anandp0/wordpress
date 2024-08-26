@@ -28,15 +28,15 @@ volumes:
   size: 5Gi 
   
 properties:
-  SITE_URL: "https://mushraf6461-dev-wordpress-5-8.038c839d.lowtouch.cloud"
+  SITE_URL: "https://anandp0-dev-wordpress-5-8.038c839d.lowtouch.cloud"
   ENABLE_HA: "no"  
   #if HA is disabled
   MYSQL_HOST : "mariadb-master-10-4:3306"
   #if HA is enabled
   #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
      #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
-  MYSQL_USER: wordpress
-  MYSQL_DATABASE: wordpress
+  MYSQL_USER: anand
+  MYSQL_DATABASE: anand
   ADMIN_USER: wpadmin
   ADMIN_USER: cloudbourne
   ADMIN_EMAIL: appzdev@cloudbourne.co
