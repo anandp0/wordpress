@@ -31,7 +31,7 @@ properties:
   SITE_URL: "https://anandp0-dev-wordpress-5-8.038c839d.lowtouch.cloud"
   ENABLE_HA: "no"  
   #if HA is disabled
-  MYSQL_HOST : "mysql-5-7-0:3306"
+  MYSQL_HOST : "mysql-5-7:3306"
   #if HA is enabled
   #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
      #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
@@ -46,4 +46,4 @@ properties:
   APPZ_FILESYNC_HOSTNAME: wordpress-0
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
   ADMIN_PASSWORD_HASH: $P$Bbd5.NW6270BIKD39DoIXWQTRyzjaO1
-  revision : 3
+  revision : 4
