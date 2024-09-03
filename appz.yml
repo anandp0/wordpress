@@ -17,6 +17,7 @@ deploy:
   port:
   - 80
   - 443
+
 volumes:
 - claim: wordpress-data
   mount: /var/www/html/wp-content/uploads
@@ -31,14 +32,13 @@ properties:
   SITE_URL: "https://anandp0-dev-wordpress-5-8.038c839d.lowtouch.cloud"
   ENABLE_HA: "no"  
   #if HA is disabled
-  MYSQL_HOST : "mysql-5-7:3306"
+  MYSQL_HOST: "mysql-5-7:3306"
   #if HA is enabled
-  #MYSQL_MASTER_HOST : "mariadb-master-10-4:3306"
-     #MYSQL_SLAVE_HOST : "mariadb-slave-10-4:3306"
-  MYSQL_USER: hybcloud
-  MYSQL_DATABASE: hybcloud
+  #MYSQL_MASTER_HOST: "mariadb-master-10-4:3306"
+  #MYSQL_SLAVE_HOST: "mariadb-slave-10-4:3306"
+  MYSQL_USER: anand
+  MYSQL_DATABASE: anand
   ADMIN_USER: wpadmin
-  ADMIN_USER: cloudbourne
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
   MYSQL_PASSWORD:
@@ -46,4 +46,5 @@ properties:
   APPZ_FILESYNC_HOSTNAME: wordpress-0
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
   ADMIN_PASSWORD_HASH: $P$Bbd5.NW6270BIKD39DoIXWQTRyzjaO1
-  revision : 6
+  revision: 6
+
